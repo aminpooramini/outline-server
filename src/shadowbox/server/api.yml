@@ -149,10 +149,10 @@ paths:
               examples:
                 '0':
                   value: >-
-                    {"id":"0","name":"First","password":"XxXxXx","port":9795,"method":"chacha20-ietf-poly1305","accessUrl":"ss://SADFJSKADFJAKSD@0.0.0.0:9795/?outline=1"}
+                    {"id":"0","name":"First","password":"XxXxXx","port":9795,"method":"aes-256-gcm","accessUrl":"ss://SADFJSKADFJAKSD@0.0.0.0:9795/?outline=1"}
                 '1':
                   value: >-
-                    {"id":"1","name":"Second","password":"xXxXxX","port":9795,"method":"chacha20-ietf-poly1305","accessUrl":"ss://ASDFHAKSDFSDAKFJ@0.0.0.0:9795/?outline=1"}
+                    {"id":"1","name":"Second","password":"xXxXxX","port":9795,"method":"aes-256-gcm","accessUrl":"ss://ASDFHAKSDFSDAKFJ@0.0.0.0:9795/?outline=1"}
     get:
       description: Lists the access keys
       tags:
@@ -173,9 +173,9 @@ paths:
                 '0':
                   value: >-
                     {"accessKeys":[
-                      {"id":"0","name":"Admin","password":"XxXxXx","port":18162,"method":"chacha20-ietf-poly1305","accessUrl":"ss://SADFJSKADFJAKSD@0.0.0.0:18162/?outline=1"},
-                      {"id":"1","name":"First","password":"xXxXxX","port":4410,"method":"chacha20-ietf-poly1305","accessUrl":"ss://ASDFSADJFKAS=@0.0.0.0:4410/?outline=1"},
-                      {"id":"2","name":"SecondWithCustomDataLimit","password":"XxXxXx","port":25424,"method":"chacha20-ietf-poly1305","dataLimit":{"bytes":8589934592},"accessUrl":"ss://ASDFHAKSDFSDAKFJ@0.0.0.0:25424/?outline=1"}]}
+                      {"id":"0","name":"Admin","password":"XxXxXx","port":18162,"method":"aes-256-gcm","accessUrl":"ss://SADFJSKADFJAKSD@0.0.0.0:18162/?outline=1"},
+                      {"id":"1","name":"First","password":"xXxXxX","port":4410,"method":"aes-256-gcm","accessUrl":"ss://ASDFSADJFKAS=@0.0.0.0:4410/?outline=1"},
+                      {"id":"2","name":"SecondWithCustomDataLimit","password":"XxXxXx","port":25424,"method":"aes-256-gcm","dataLimit":{"bytes":8589934592},"accessUrl":"ss://ASDFHAKSDFSDAKFJ@0.0.0.0:25424/?outline=1"}]}
   /access-keys/{id}:
     delete:
       description: Deletes an access key
